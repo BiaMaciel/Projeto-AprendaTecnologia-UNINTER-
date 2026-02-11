@@ -1,0 +1,93 @@
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    margin-top: var(--spacing-section);
+    padding-bottom: 100px;
+}
+
+.category-card { 
+    text-decoration: none;
+    color: var(--color-text);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.category-card .icon .fa-laptop-code {
+    color: var(--color-primary2);
+}
+.category-card .icon .fa-pen-to-square {
+    color: #fc6176;
+}
+.category-card .icon .fa-database {
+    color: #e2a248;
+}
+.category-card .icon .fa-shield-halved {
+    color: #dc3633;
+}
+.category-card .icon .fa-network-wired {
+    color: #61c041;
+}
+.category-card .icon .fa-gear {
+    color: #6541c0;
+}
+
+.category-card h3 {
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    flex-grow: 1;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--color-subtext);
+}
+
+/*AJUSTES PARA TABLET (Max-width: 768px)*/
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    .category-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .category-card p {
+        font-size: 13px;
+    }
+}
+
+
+/*AJUSTES PARA CELULAR (Max-width: 480px)*/
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    .category-card:hover {
+        transform: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}

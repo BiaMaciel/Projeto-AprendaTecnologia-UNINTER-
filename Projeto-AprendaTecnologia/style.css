@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+}
+
+/* Variáveis de Cores e Fontes */
+:root {
+    --color-primary: #4A90E2; /* Azul-claro */
+    --color-primary2: #1c5183; /* Azul-escuro */
+    --color-white: #FFFFFF;
+    --color-light-gray: #F5F5F5;
+    --color-text-dark: #333333; /* Cinza escuro para textos */
+    --color-text-medium: #666666; /* Cinza médio para subtextos */
+    --font-primary: 'Poppins', sans-serif;
+    --margin-lateral: 80px;
+    --spacing-vertical: 40px;
+}
+
+/*HEADER*/
+
+.header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-light-gray);
+    padding: 15px var(--margin-lateral);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-text-medium);
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-text-medium);
+    margin-left: 30px;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.nav-menu a:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary); 
+}
+
+
+.nav-menu a.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary); 
+}
+
+.btn-explore {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+
+/* Container da Logo*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+
+.logo-icon {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1;
+}
+
+
+.header .logo-icon {
+    background-color: var(--color-primary);
+    padding: 5px 8px; 
+    border-radius: 8px; 
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-aprende {
+    color: var(--color-primary); 
+    margin-right: 2px;
+}
+
+.logo-tecnologia {
+    color: var(--color-text-dark);
+    font-weight: 400; 
+}
+
+/* Configurações do Layout Principal (Desktop 1440px) */
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--margin-lateral);
+    padding-top: var(--spacing-vertical);
+    min-height: 80vh;
+}
+
+/* Estilo para Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: #3A7BCD; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* HERO BANNER */
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: var(--color-primary);
+}
+
+.hero-text .subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-medium);
+}
+
+img {
+    width: 550px;
+}
+
+.hero-image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+/* SEÇÃO DE DESTAQUES */
+.highlights-section {
+    padding-top: var(--spacing-vertical);
+    text-align: center;
+}
+
+.highlights-section h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.highlight-card {
+    background-color: var(--color-light-gray);
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card .icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #4A90E2;
+}
+
+.highlight-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.highlight-card a {
+    font-size: 15px;
+    color: #1c5183;
+    text-decoration: none;
+     transition: 0.10s ease-in-out;
+}
+
+.highlight-card a:hover {
+    text-decoration: underline;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 20px;
+     margin-bottom: 10px;
+}
+
+/* --- ESTILOS DO FOOTER --- */
+
+.main-footer {
+    background-color: var(--color-primary2); 
+    color: var(--color-text-medium);
+    padding: 40px 0 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--margin-lateral);
+}
+
+/* 1. SEÇÃO DE COLUNAS (Topo) */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e055; 
+}
+
+.footer-col {
+    flex-basis: 33%;
+}
+
+.footer-col h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilo para a Coluna 1: Logo e Descrição */
+.footer-about {
+    max-width: 350px;
+}
+
+.footer-logo-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+
+.footer-logo-group .logo-tecnologia {
+    color: #fff;
+}
+
+.logo-icon-box {
+    background-color: var(--color-primary);
+    padding: 5px 8px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+
+.logo-icon-box i { 
+    font-size: 1.2rem;
+    color: var(--color-white);
+    line-height: 1;
+    display: block;
+}
+
+
+.footer-description {
+    font-size: 0.9rem;
+    color: #e2d9d9;
+    line-height: 1.5;
+}
+
+
+/* Estilo para a Coluna 2: Links Rápidos */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e2d9d9;
+    font-size: 1rem;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Estilo para a Coluna 3: Contato e Redes Sociais */
+.contact-email-group {
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    display: block;
+    font-size: 1rem;
+    color: #e2d9d9;
+    font-weight: 500;
+}
+
+.social-icons a {
+    color: #e2d9d9;
+    font-size: 1.25rem;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: var(--color-primary);
+}
+
+/* 2. SEÇÃO INFERIOR (Copyright e ODS) */
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.copyright {
+    margin: 0;
+    color: #aca4a4;
+}
+
+.footer-ods {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ods-icon-box {
+    font-size: 1.5rem;
+}
+
+.ods-text p {
+    margin: 0;
+    line-height: 1.3;
+    color: #e2d9d9; 
+}
+
+.ods-line-1 {
+    font-weight: 600;
+}
+
+/*MEDIA QUERIES (TABLET & MOBILE)*/
+
+/* TABLET MÉDIO / HORIZONTAL*/
+@media (max-width: 1024px) {
+    :root {
+        --margin-lateral: 40px; /* Reduz margem lateral */
+        --spacing-vertical: 30px;
+    }
+
+    /* HEADER */
+    .nav-menu a {
+        margin-left: 20px;
+    }
+    
+    /* HERO BANNER */
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    /* SEÇÃO DE DESTAQUES */
+    .highlight-cards {
+        gap: 15px; /* Reduz o espaçamento entre cards */
+    }
+
+    /* FOOTER */
+    .footer-columns {
+        gap: 20px;
+    }
+}
+
+/*TABLET VERTICAL / CELULAR GRANDE (Máx. 768px)*/
+@media (max-width: 768px) {
+    :root {
+        --margin-lateral: 20px;
+    }
+
+    /* HEADER */
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-menu a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn-explore {
+        display: none;
+    }
+
+    /* HERO BANNER */
+    .hero-banner {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+        color: var(--color-text-dark);
+    }
+
+    /* SEÇÃO DE DESTAQUES */
+    .highlight-cards {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .highlight-card {
+        width: 100%; 
+    }
+
+    /* PÁGINAS DE DETALHE/CATEGORIAS */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER */
+    .footer-columns {
+        flex-direction: column; 
+    }
+
+    .footer-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .copyright {
+        margin-bottom: 10px;
+    }
+}
+
+/*CELULAR PEQUENO (Máx. 480px) */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1rem;
+    }
+
+    /* HEADER */
+    .nav-menu a {
+        display: block; 
+        margin: 5px 0;
+    }
+
+    /* PÁGINAS DE DETALHE/CATEGORIAS */
+    .category-grid {
+        grid-template-columns: 1fr; 
+    }
+    /* SOBRE/CONTATO */
+    .about-section {
+        flex-direction: column; 
+        gap: 20px;
+    }
+    
+    .about-image {
+        order: -1; 
+    }
+}

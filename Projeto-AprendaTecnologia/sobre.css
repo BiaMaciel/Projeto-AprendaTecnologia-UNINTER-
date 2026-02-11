@@ -1,0 +1,81 @@
+.about-contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.content-box {
+    background-color: var(--color-light-gray);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-header .fa-brain{
+    color: var(--color-primary);
+}
+
+.main-icon {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
+}
+
+/*TABLET / CELULAR GRANDE (Máx. 768px)*/
+@media (max-width: 768px) {
+    .about-contact-section {
+        max-width: 100%; 
+       
+        padding: 50px var(--margin-lateral) 0;
+    }
+
+    .content-box {
+        padding: 30px; 
+        margin-bottom: 30px;
+    }
+
+    .content-box h2 {
+        font-size: 1.6rem; 
+    }
+    
+    .main-icon {
+        font-size: 2.5rem; 
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+
+/*AJUSTES PARA CELULAR PEQUENO (Máx. 480px)*/
+@media (max-width: 480px) {
+    .icon-header {
+        align-items: flex-start; /
+    }
+
+    .main-icon {
+        margin-right: 10px;
+    }
+
+    .content-box h2 {
+        font-size: 1.4rem;
+    }
+
+}

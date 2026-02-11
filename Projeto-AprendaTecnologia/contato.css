@@ -1,0 +1,101 @@
+
+.content-box {
+    background-color: var(--color-light-gray);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-icon {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.main-icon .fa-envelope{
+    color: var(--color-primary);
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+
+.contact-box {
+    border: 1px solid #E0E0E0;
+    background-color: var(--color-white);
+}
+
+.contact-email {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-email a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.project-credits {
+    text-align: center;
+    color: var(--color-text-medium);
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #CCC;
+}
+
+/*TABLET VERTICAL / CELULAR GRANDE (Máx. 768px)*/
+@media (max-width: 768px) {
+      
+    .content-box {
+        padding: 30px; 
+        margin-bottom: 30px; 
+    }
+
+    .icon-header {
+        margin-bottom: 15px; 
+    }
+
+    
+    .main-icon {
+        font-size: 2.5rem; 
+        margin-right: 10px;
+    }
+
+    .content-box h2 {
+        font-size: 1.6rem; 
+    }
+   
+    
+    .project-credits {
+        margin-top: 30px; 
+        padding-top: 15px; 
+        font-size: 0.9rem;
+    }
+}
+
+
+/*CELULAR PEQUENO (Máx. 480px)*/
+@media (max-width: 480px) {
+    
+    .content-box {
+        padding: 20px; 
+    }
+    
+    .main-icon {
+        font-size: 2rem;
+    }
+
+    .content-box h2 {
+        font-size: 1.4rem; 
+    }
+    
+   
+}
