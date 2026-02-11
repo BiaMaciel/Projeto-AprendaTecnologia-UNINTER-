@@ -22,7 +22,7 @@ Facilitar o acesso a cursos gratuitos de tecnologia por meio de um portal simple
 ✔ Protótipo acadêmico finalizado  
 🚧 Em desenvolvimento (HTML e CSS)
 - Código-fonte disponível neste repositório
-- 
+- Link para visualização: https://projeto-aprenda-tecnologia-uninter.vercel.app/contato.html
 ## 📚 Aprendizados
 - Estruturação de páginas com HTML semântico
 - Estilização responsiva com CSS
